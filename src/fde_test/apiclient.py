@@ -39,6 +39,7 @@ class APIClient:
             error_message = r.json()["detail"]
             response_data["success"] = False
             response_data["reason"] = f"API Error. Status: {r.status}. Message: {error_message}"
+            response_data["social_handle"] = ""
             logger.error("Customer '%s' encountered API error. Message: %s", customer.customer_id, error_message)
         return response_data
     

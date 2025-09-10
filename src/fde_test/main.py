@@ -27,23 +27,22 @@ def main():
     logger.info("Starting enrichment...")
     for customer in customer_df.itertuples():
         if not customer.email:
-            customer_df.loc[customer.Index, ["success", "reason"]] = [False, "Missing email"]
-            logger.error(f"Customer '{customer.customer_id}' missing email.")
+            customer_df.loc[customer.Index, ["social_handle"]] = [""]
+            logger.error(f"Customer '{customer.customer_id}', Unable to call Enrichment API due to missing email.")
         else:
             r = api_client.get_enrichment_data(customer)
-            customer_df.loc[customer.Index, ["social_handle", "success", "reason"]] = [r["social_handle"], r["success"], r["reason"]]
+            customer_df.loc[customer.Index, ["social_handle", "reason"]] = [r["social_handle"], r["reason"]]
 
     #Submit Enriched Data
     logger.info("Starting submissions...")
-    for customer in customer_df.loc[customer_df["success"] == True].itertuples():
+    for customer in customer_df.itertuples():
         r = api_client.post_submission(customer)
-        if not r["success"]:
-            customer_df.loc[customer.Index, ["success", "reason"]] = [r["success"], r["reason"]]
+        customer_df.loc[customer.Index, ["success", "reason"]] = [r["success"], r["reason"]]
 
     logger.info("Submissions Complete... Writing output file...")
     (Path.cwd() / config_data["output_dir"]).mkdir(exist_ok=True)
     file_path = f"{config_data["output_dir"]}{config_data["output_file"]}"
-    customer_df.to_csv(file_path)
+    customer_df.to_csv(file_path, index=False)
     logger.info("Process Complete")
 
 if __name__ == "__main__":

@@ -1,39 +1,39 @@
-{"message": "Customer '108' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.673459+00:00"}
-{"message": "Customer '125' missing email.", "timestamp": "2025-09-10 20:39:02.686588+00:00"}
-{"message": "Customer '182' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.704698+00:00"}
-{"message": "Customer '229' missing email.", "timestamp": "2025-09-10 20:39:02.730446+00:00"}
-{"message": "Customer '231' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.734057+00:00"}
-{"message": "Customer '251' missing email.", "timestamp": "2025-09-10 20:39:02.739769+00:00"}
-{"message": "Customer '274' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.742951+00:00"}
-{"message": "Customer '300' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.750689+00:00"}
-{"message": "Customer '311' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.758278+00:00"}
-{"message": "Customer '346' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.769436+00:00"}
-{"message": "Customer '350' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.784746+00:00"}
-{"message": "Customer '448' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:02.814607+00:00"}
-{"message": "Customer '513' missing email.", "timestamp": "2025-09-10 20:39:08.875898+00:00"}
-{"message": "Customer '556' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.880677+00:00"}
-{"message": "Customer '564' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.886268+00:00"}
-{"message": "Customer '593' missing email.", "timestamp": "2025-09-10 20:39:08.891356+00:00"}
-{"message": "Customer '611' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.897423+00:00"}
-{"message": "Customer '639' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.906842+00:00"}
-{"message": "Customer '659' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.919652+00:00"}
-{"message": "Customer '795' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.964003+00:00"}
-{"message": "Customer '865' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:08.982667+00:00"}
-{"message": "Customer '921' missing email.", "timestamp": "2025-09-10 20:39:09.010576+00:00"}
-{"message": "Customer '996' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.044745+00:00"}
-{"message": "Customer 'A212' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.053173+00:00"}
-{"message": "Customer 'A528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.075719+00:00"}
-{"message": "Customer 'A749' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.079314+00:00"}
-{"message": "Customer 'B372' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.113250+00:00"}
-{"message": "Customer 'B460' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.122259+00:00"}
-{"message": "Customer 'B512' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.125019+00:00"}
-{"message": "Customer 'B528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.127855+00:00"}
-{"message": "Customer 'B866' missing email.", "timestamp": "2025-09-10 20:39:23.141900+00:00"}
-{"message": "Customer 'C149' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:23.153062+00:00"}
-{"message": "Customer 'C708' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:29.203480+00:00"}
-{"message": "Customer 'C807' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:29.206805+00:00"}
-{"message": "Customer 'C999' missing email.", "timestamp": "2025-09-10 20:39:29.216399+00:00"}
-{"message": "Customer 'D501' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:29.259557+00:00"}
-{"message": "Customer 'D908' missing email.", "timestamp": "2025-09-10 20:39:29.276991+00:00"}
-{"message": "Customer 'E342' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:29.309090+00:00"}
-{"message": "Customer 'E827' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 20:39:29.336863+00:00"}
+{"message": "Customer '108' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.634425+00:00"}
+{"message": "Customer '125', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.651750+00:00"}
+{"message": "Customer '182' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.672818+00:00"}
+{"message": "Customer '229', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.696933+00:00"}
+{"message": "Customer '231' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.700005+00:00"}
+{"message": "Customer '251', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.704968+00:00"}
+{"message": "Customer '274' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.709026+00:00"}
+{"message": "Customer '300' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.719033+00:00"}
+{"message": "Customer '311' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.727695+00:00"}
+{"message": "Customer '346' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.738889+00:00"}
+{"message": "Customer '350' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.750323+00:00"}
+{"message": "Customer '448' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:00.783360+00:00"}
+{"message": "Customer '513', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.843944+00:00"}
+{"message": "Customer '556' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.848567+00:00"}
+{"message": "Customer '564' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.856708+00:00"}
+{"message": "Customer '593', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.861416+00:00"}
+{"message": "Customer '611' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.867991+00:00"}
+{"message": "Customer '639' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.878078+00:00"}
+{"message": "Customer '659' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.892339+00:00"}
+{"message": "Customer '795' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.933911+00:00"}
+{"message": "Customer '865' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.952626+00:00"}
+{"message": "Customer '921', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.979371+00:00"}
+{"message": "Customer '996' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.006918+00:00"}
+{"message": "Customer 'A212' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.013985+00:00"}
+{"message": "Customer 'A528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.036235+00:00"}
+{"message": "Customer 'A749' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.038813+00:00"}
+{"message": "Customer 'B372' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.063890+00:00"}
+{"message": "Customer 'B460' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.075157+00:00"}
+{"message": "Customer 'B512' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.078198+00:00"}
+{"message": "Customer 'B528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.080965+00:00"}
+{"message": "Customer 'B866', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:13.092237+00:00"}
+{"message": "Customer 'C149' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.102918+00:00"}
+{"message": "Customer 'C708' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.158318+00:00"}
+{"message": "Customer 'C807' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.160833+00:00"}
+{"message": "Customer 'C999', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:19.168447+00:00"}
+{"message": "Customer 'D501' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.208666+00:00"}
+{"message": "Customer 'D908', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:19.222602+00:00"}
+{"message": "Customer 'E342' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.252082+00:00"}
+{"message": "Customer 'E827' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.277654+00:00"}
