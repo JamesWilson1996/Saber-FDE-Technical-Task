@@ -31,22 +31,14 @@ def main():
             logger.error(f"Customer '{customer.customer_id}' missing email.")
         else:
             r = api_client.get_enrichment_data(customer)
-            if r.status == 200:
-                social_handle = r.json()["social_handle"]
-                customer_df.loc[customer.Index, ["social_handle", "success"]] = [social_handle, True]
-            else:
-                error_message = r.json()["detail"]
-                customer_df.loc[customer.Index, ["success", "reason"]] = [False, f"API Error. Status: {r.status}. Message: {error_message}"]
-                logger.error("Customer '%s' encountered API error. Message: %s", customer.customer_id, error_message)
+            customer_df.loc[customer.Index, ["social_handle", "success", "reason"]] = [r["social_handle"], r["success"], r["reason"]]
 
     #Submit Enriched Data
     logger.info("Starting submissions...")
     for customer in customer_df.loc[customer_df["success"] == True].itertuples():
         r = api_client.post_submission(customer)
-        if r.status != 200:
-            error_message = r.json()["detail"]
-            customer_df.loc[customer.Index, ["success", "reason"]] = [False, f"API Error. Status: {r.status}. Message: {error_message}"]
-            logger.error("Customer '%s' encountered API error. Message: %s", customer.customer_id, error_message)
+        if not r["success"]:
+            customer_df.loc[customer.Index, ["success", "reason"]] = [r["success"], r["reason"]]
 
     logger.info("Submissions Complete... Writing output file...")
     (Path.cwd() / config_data["output_dir"]).mkdir(exist_ok=True)
