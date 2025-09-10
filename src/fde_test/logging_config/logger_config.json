@@ -1,0 +1,80 @@
+{
+  "disable_existing_loggers": false,
+  "version": 1,
+  "formatter": {
+    "json": {
+      "fmt_keys": {
+        "function": "funcName",
+        "level": "levelname",
+        "line": "lineno",
+        "logger": "name",
+        "message": "message",
+        "module": "module",
+        "thread_name": "threadName",
+        "timestamp": "timestamp"
+      }
+    }
+  },
+  "formatters": {
+    "colour": {
+      "()": "logger.ColouredFormatter",
+      "datefmt": "%Y-%m-%d %H:%M:%S",
+      "format": "%(asctime)s.%(msecs)03.0fZ [%(levelname)s] %(module)s:L%(lineno)04d | %(funcName)s: %(message)s"
+    },
+    "json": {
+      "()": "logger.JSONLogFormatter"
+    },
+    "simple": {
+      "datefmt": "%Y-%m-%dT%H:%M:%S%z",
+      "format": "[%(levelname)s|%(module)s|L%(lineno)d] %(asctime)s: %(message)s"
+    }
+  },
+  "handlers": {
+    "file_json": {
+      "backupCount": 3,
+      "class": "logging.handlers.RotatingFileHandler",
+      "filename": "src/fde_test/logs/fde_test.debug.log.jsonl",
+      "formatter": "json",
+      "level": "DEBUG",
+      "maxBytes": 10000000
+    },
+    "error_file_json": {
+      "backupCount": 3,
+      "class": "logging.handlers.RotatingFileHandler",
+      "filename": "src/fde_test/logs/fde_test.error.log.jsonl",
+      "formatter": "json",
+      "level": "ERROR",
+      "maxBytes": 10000000
+    },
+    "queue_handler": {
+      "class": "logger.CustomQueueHandler",
+      "handlers": [
+        "file_json",
+        "error_file_json",
+        "stderr",
+        "stdout"
+      ],
+      "respect_handler_level": true
+    },
+    "stderr": {
+      "class": "logging.StreamHandler",
+      "formatter": "simple",
+      "level": "WARNING",
+      "stream": "ext://sys.stderr"
+    },
+    "stdout": {
+      "class": "logging.StreamHandler",
+      "formatter": "colour",
+      "level": "INFO",
+      "stream": "ext://sys.stdout"
+    }
+  },
+  "loggers": {
+    "root": {
+      "handlers": [
+        "queue_handler"
+      ],
+      "level": "DEBUG"
+    }
+  }
+}
