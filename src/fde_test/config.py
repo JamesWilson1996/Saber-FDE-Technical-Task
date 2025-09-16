@@ -13,6 +13,7 @@ def read_config():
         "city": config.get("QueryParams", "city"),
         "date_time": config.get("QueryParams", "date_time"),
         "api_base_url": config.get("API", "base_url"),
+        "api_retries": int(config.get("API", "retries")),
         "output_dir": config.get("Output", "output_dir"),
         "output_file": config.get("Output", "output_file")
     }

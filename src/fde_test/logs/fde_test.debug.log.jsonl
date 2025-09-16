@@ -1,545 +1,577 @@
-{"message": "query_customer_spend request executing.", "timestamp": "2025-09-10 21:13:58.610087+00:00"}
-{"message": "Starting enrichment...", "timestamp": "2025-09-10 21:13:58.620512+00:00"}
-{"message": "Starting new HTTP connection (1): localhost:5000", "timestamp": "2025-09-10 21:13:58.623491+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound21%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.634161+00:00"}
-{"message": "Customer '108' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.634425+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_sanchez%40example.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:13:58.641763+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=karen_sanchez%40example.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:13:58.642044+00:00"}
-{"message": "Retry: /enrichment?email=karen_sanchez%40example.com", "timestamp": "2025-09-10 21:13:58.642331+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_sanchez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.645062+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_clark%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.649492+00:00"}
-{"message": "Customer '125', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.651750+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michellemartin%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.655822+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=christophersanchez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.661134+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.665081+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_anderson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.668899+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound27%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.672698+00:00"}
-{"message": "Customer '182' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.672818+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=mark_scott%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.676744+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty.king%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.682417+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=carol_robinson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.687169+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_brown%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.690364+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_robinson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.694491+00:00"}
-{"message": "Customer '229', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.696933+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound11%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.699902+00:00"}
-{"message": "Customer '231' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.700005+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=anthony_hill%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.703573+00:00"}
-{"message": "Customer '251', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:13:58.704968+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound15%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.708832+00:00"}
-{"message": "Customer '274' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.709026+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=ruthwhite%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.714395+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound24%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.718911+00:00"}
-{"message": "Customer '300' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.719033+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.hill%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.722830+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound22%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.727560+00:00"}
-{"message": "Customer '311' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.727695+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_taylor%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.731608+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=richard_lee%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.734891+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound17%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.738614+00:00"}
-{"message": "Customer '346' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.738889+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_hernandez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.742981+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=paulwhite%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.746683+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound14%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:13:58.750218+00:00"}
-{"message": "Customer '350' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:13:58.750323+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen.hill%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:13:58.753875+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandrajohnson%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:13:58.757772+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=sandrajohnson%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:13:58.757903+00:00"}
-{"message": "Retry: /enrichment?email=sandrajohnson%40outlook.com", "timestamp": "2025-09-10 21:13:58.758032+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandrajohnson%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:13:58.760179+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=sandrajohnson%40outlook.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:13:58.760274+00:00"}
-{"message": "Retry: /enrichment?email=sandrajohnson%40outlook.com", "timestamp": "2025-09-10 21:14:00.760781+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandrajohnson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.763689+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=stevenjones%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.767073+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=danielwhite%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.769841+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=james_lee%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.772753+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa.perez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.776135+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=william_taylor%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.780158+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound8%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:00.783268+00:00"}
-{"message": "Customer '448' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:00.783360+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=paul_anderson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.786129+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty.johnson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.788783+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donald.wilson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.791750+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_robinson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.794353+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_martinez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.797338+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancy_lee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.800028+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_brown%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.802918+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=richardthompson%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:00.806445+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=richardthompson%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:00.806585+00:00"}
-{"message": "Retry: /enrichment?email=richardthompson%40outlook.com", "timestamp": "2025-09-10 21:14:00.806734+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=richardthompson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.809264+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=bettyking%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.812473+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=james.robinson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.815325+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=andrew_martinez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.818657+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=stevendavis%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:00.822089+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_flores%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:00.825167+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=karen_flores%40example.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:00.825269+00:00"}
-{"message": "Retry: /enrichment?email=karen_flores%40example.com", "timestamp": "2025-09-10 21:14:00.825379+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_flores%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:00.827639+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=karen_flores%40example.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:00.827750+00:00"}
-{"message": "Retry: /enrichment?email=karen_flores%40example.com", "timestamp": "2025-09-10 21:14:02.828372+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_flores%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:02.831042+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=karen_flores%40example.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:02.831149+00:00"}
-{"message": "Retry: /enrichment?email=karen_flores%40example.com", "timestamp": "2025-09-10 21:14:06.831602+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_flores%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.834304+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=carolharris%40hotmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:06.837636+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=carolharris%40hotmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:06.837763+00:00"}
-{"message": "Retry: /enrichment?email=carolharris%40hotmail.com", "timestamp": "2025-09-10 21:14:06.837912+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=carolharris%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.839739+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=william.martin%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.842705+00:00"}
-{"message": "Customer '513', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.843944+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=richard.jackson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.845855+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound18%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.848482+00:00"}
-{"message": "Customer '556' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.848567+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen.torres%40gmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:06.851084+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=karen.torres%40gmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:06.851202+00:00"}
-{"message": "Retry: /enrichment?email=karen.torres%40gmail.com", "timestamp": "2025-09-10 21:14:06.851316+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen.torres%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.853379+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound12%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.856599+00:00"}
-{"message": "Customer '564' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.856708+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donald.jackson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.859924+00:00"}
-{"message": "Customer '593', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.861416+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa.thompson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.864418+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound5%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.867877+00:00"}
-{"message": "Customer '611' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.867991+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jennifer.hill%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.871297+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_lewis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.874767+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound13%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.877987+00:00"}
-{"message": "Customer '639' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.878078+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=susan.williams%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.880661+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=robertwalker%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.883739+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_robinson%40gmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:06.886803+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=jessica_robinson%40gmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:06.886948+00:00"}
-{"message": "Retry: /enrichment?email=jessica_robinson%40gmail.com", "timestamp": "2025-09-10 21:14:06.887076+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_robinson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.889149+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound23%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.892184+00:00"}
-{"message": "Customer '659' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.892339+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_ramirez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.895644+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=carol_thompson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.898980+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=marklewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.902671+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=davidperez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.905499+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=helen_flores%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.908328+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_miller%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.910967+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michael.robinson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.913915+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=helen.rodriguez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.916662+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=john_perez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.919709+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=danielscott%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.922782+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jennifer.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.925379+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.928132+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=helenmartinez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.931226+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound30%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.933823+00:00"}
-{"message": "Customer '795' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.933911+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=bettyhill%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.936556+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshua.jackson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.938973+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=danieldavis%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.941437+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=charles_lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.943781+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=barbara_martin%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.946753+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_williams%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.949582+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound28%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:06.952536+00:00"}
-{"message": "Customer '865' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:06.952626+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sharon.rodriguez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.955337+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michael_moore%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.958277+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=linda_hernandez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.961990+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=steven.rodriguez%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.965465+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_sanchez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.969325+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandra.perez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.972204+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sharon_anderson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.974883+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=richard.sanchez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.977984+00:00"}
-{"message": "Customer '921', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:06.979371+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donna.martinez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:06.981653+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty_williams%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:06.984345+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=betty_williams%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:06.984440+00:00"}
-{"message": "Retry: /enrichment?email=betty_williams%40company.com", "timestamp": "2025-09-10 21:14:06.984694+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty_williams%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:06.986691+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=betty_williams%40company.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:06.986810+00:00"}
-{"message": "Retry: /enrichment?email=betty_williams%40company.com", "timestamp": "2025-09-10 21:14:08.987433+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty_williams%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:08.990264+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=betty_williams%40company.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:08.990374+00:00"}
-{"message": "Retry: /enrichment?email=betty_williams%40company.com", "timestamp": "2025-09-10 21:14:12.991068+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=betty_williams%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:12.993800+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_lopez%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:12.996919+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=david_wilson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:12.999512+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancy.miller%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.001974+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=john_thompson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.004175+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound7%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.006839+00:00"}
-{"message": "Customer '996' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.006918+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=linda_lee%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.009264+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donna_lee%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.011711+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound10%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.013904+00:00"}
-{"message": "Customer 'A212' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.013985+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jamessmith%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.016532+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donna_thompson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.019045+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessicawilson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.021836+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=matthewwhite%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.024508+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_ramirez%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:13.028667+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=lisa_ramirez%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.028780+00:00"}
-{"message": "Retry: /enrichment?email=lisa_ramirez%40outlook.com", "timestamp": "2025-09-10 21:14:13.028886+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.030647+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=mary_williams%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.033656+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound16%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.036136+00:00"}
-{"message": "Customer 'A528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.036235+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound26%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.038729+00:00"}
-{"message": "Customer 'A749' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.038813+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=barbarawalker%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.041969+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandra.williams%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.045136+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sandra_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.048425+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=johngarcia%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.051153+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=anthonyclark%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.053849+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donna.lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.056867+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=barbarasmith%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.060599+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound25%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.063792+00:00"}
-{"message": "Customer 'B372' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.063890+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancy_wright%40company.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:13.066725+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=nancy_wright%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.066821+00:00"}
-{"message": "Retry: /enrichment?email=nancy_wright%40company.com", "timestamp": "2025-09-10 21:14:13.066930+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancy_wright%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.069368+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen.moore%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.072330+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound20%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.075062+00:00"}
-{"message": "Customer 'B460' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.075157+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound29%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.078113+00:00"}
-{"message": "Customer 'B512' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.078198+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound9%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.080876+00:00"}
-{"message": "Customer 'B528' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.080965+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.anderson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.084053+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancyallen%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.087138+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=stevenlee%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.090576+00:00"}
-{"message": "Customer 'B866', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:13.092237+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.lee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.095191+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=christopherthompson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.099999+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound19%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:13.102828+00:00"}
-{"message": "Customer 'C149' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:13.102918+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karenlewis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.106826+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=anthony.allen%40yahoo.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:13.109886+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=anthony.allen%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.109993+00:00"}
-{"message": "Retry: /enrichment?email=anthony.allen%40yahoo.com", "timestamp": "2025-09-10 21:14:13.110100+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=anthony.allen%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.112472+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=christopher_lopez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.115207+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=christopher.davis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.118134+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=daniel.hill%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.121039+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sharon.king%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.124295+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=william.harris%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.127962+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donaldlewis%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.131094+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen_allen%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.133710+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lindasanchez%40company.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:13.137030+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=lindasanchez%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.137210+00:00"}
-{"message": "Retry: /enrichment?email=lindasanchez%40company.com", "timestamp": "2025-09-10 21:14:13.137387+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lindasanchez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:13.139945+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.thompson%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:13.143826+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=joseph.thompson%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.143933+00:00"}
-{"message": "Retry: /enrichment?email=joseph.thompson%40yahoo.com", "timestamp": "2025-09-10 21:14:13.144038+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.thompson%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:13.145874+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=joseph.thompson%40yahoo.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:13.145962+00:00"}
-{"message": "Retry: /enrichment?email=joseph.thompson%40yahoo.com", "timestamp": "2025-09-10 21:14:15.146493+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.thompson%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:15.149413+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=joseph.thompson%40yahoo.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:15.149564+00:00"}
-{"message": "Retry: /enrichment?email=joseph.thompson%40yahoo.com", "timestamp": "2025-09-10 21:14:19.149898+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.thompson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.152665+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_wright%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.155516+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound6%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:19.158231+00:00"}
-{"message": "Customer 'C708' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.158318+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound2%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:19.160748+00:00"}
-{"message": "Customer 'C807' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.160833+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia.robinson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.163405+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_young%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.167139+00:00"}
-{"message": "Customer 'C999', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:19.168447+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.gonzalez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.170461+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=paul.lee%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.173186+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia.jackson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.175961+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=barbaramiller%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.179125+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=david.garcia%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.182266+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=steven_moore%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.185288+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_jackson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.188486+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=william_lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.191340+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michael_hernandez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.193946+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=christophermiller%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.197545+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=steven_smith%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.200342+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=matthew.thomas%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.203487+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.garcia%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.206008+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound3%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:19.208581+00:00"}
-{"message": "Customer 'D501' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.208666+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=susanwhite%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.211244+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=james.wilson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.213850+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=maryhernandez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.216403+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=anthony_taylor%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.218705+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=helengonzalez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.221233+00:00"}
-{"message": "Customer 'D908', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-10 21:14:19.222602+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=joshualewis%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.224405+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=paullee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.227218+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=james_sanchez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.229883+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=ruth.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.232744+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=charles_hernandez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.235119+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=robert_robinson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.237912+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=nancy.hill%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.240513+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=carol_young%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.243451+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_torres%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.246638+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_king%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.249263+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound1%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:19.251996+00:00"}
-{"message": "Customer 'E342' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.252082+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michael.lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.254520+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=karen.scott%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.257718+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=sarahyoung%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.260217+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=thomas.lopez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.262739+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=paulwilliams%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.265044+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=charlesthomas%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.267570+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_rodriguez%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:19.269786+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=lisa_rodriguez%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:19.269873+00:00"}
-{"message": "Retry: /enrichment?email=lisa_rodriguez%40outlook.com", "timestamp": "2025-09-10 21:14:19.269974+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_rodriguez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.272106+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=michaelmoore%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.274715+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=notfound4%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-10 21:14:19.277568+00:00"}
-{"message": "Customer 'E827' encountered API error. Message: Profile not found", "timestamp": "2025-09-10 21:14:19.277654+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=mark_miller%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.280200+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=steven_jackson%40yahoo.com HTTP/1.1\" 503 0", "timestamp": "2025-09-10 21:14:19.283129+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=steven_jackson%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:19.283221+00:00"}
-{"message": "Retry: /enrichment?email=steven_jackson%40yahoo.com", "timestamp": "2025-09-10 21:14:19.283325+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=steven_jackson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.287639+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=charles.martinez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:19.291306+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.lee%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:19.294638+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=jessica.lee%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:19.294751+00:00"}
-{"message": "Retry: /enrichment?email=jessica.lee%40company.com", "timestamp": "2025-09-10 21:14:19.294858+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.lee%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:19.296760+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=jessica.lee%40company.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:19.296845+00:00"}
-{"message": "Retry: /enrichment?email=jessica.lee%40company.com", "timestamp": "2025-09-10 21:14:21.297328+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.lee%40company.com HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:21.300191+00:00"}
-{"message": "Incremented Retry for (url='/enrichment?email=jessica.lee%40company.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:21.300322+00:00"}
-{"message": "Retry: /enrichment?email=jessica.lee%40company.com", "timestamp": "2025-09-10 21:14:25.301205+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.lee%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.304434+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=elizabethdavis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.308258+00:00"}
-{"message": "http://localhost:5000 \"GET /enrichment?email=donald_moore%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.311595+00:00"}
-{"message": "Starting submissions...", "timestamp": "2025-09-10 21:14:25.313043+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.370252+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.430569+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.480706+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.530675+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.580818+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.630462+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.680560+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.730644+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.781390+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.830296+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.880523+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.930836+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:25.980532+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.030181+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.081203+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.130629+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.180637+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.230728+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.280522+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.330160+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.380533+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.430734+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.480413+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.531026+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.580445+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.630306+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.680608+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.740441+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.790745+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.840253+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.890965+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.940364+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:26.990634+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.040604+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.090594+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.140267+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.190618+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.240599+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.290694+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.340472+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.390575+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.440553+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.490343+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.540572+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.600539+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.650729+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:27.700275+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:27.750415+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:27.750573+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:27.750724+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:27.800490+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:27.800686+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:29.801235+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:29.850528+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:29.850711+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:33.850995+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:33.900404+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:33.950364+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.000386+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.050417+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.101143+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.151129+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.200484+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.250491+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.300831+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.350316+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.400285+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.450841+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.500775+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.550747+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.600412+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.650353+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.701440+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.750320+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.800865+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.850470+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.900661+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:34.950707+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.000619+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.050517+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.100414+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.150663+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.200759+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.250686+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.300433+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.350645+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.400565+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.450784+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.500636+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.550618+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.600235+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.650547+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.700470+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.750710+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.800359+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.850769+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.900322+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:35.950793+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.000676+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.050691+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.100329+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.160391+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.210673+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.260558+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.310791+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:36.360862+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:36.410743+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:36.410928+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:36.411080+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:36.460682+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:36.460813+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:38.461196+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:38.510756+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:38.510898+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:42.511540+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.560460+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.610488+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.660358+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.710322+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.760117+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.810657+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.860566+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.910620+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:42.960222+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.010670+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.060499+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.110951+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.160256+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.210416+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.260234+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.310494+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.361026+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.410859+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.460426+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.510281+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.570650+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.620906+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.680720+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.730312+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.780671+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.830859+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.881019+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.930614+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:43.980739+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.030685+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.090734+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.140935+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.190775+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.240460+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.300244+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.350328+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.400621+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.450333+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.500416+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.550129+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.600377+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.650867+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.700352+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.750141+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.800353+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.860730+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.910623+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:44.960425+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:45.020243+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:45.070430+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:45.120735+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:45.120913+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:45.121069+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:45.170299+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:45.170481+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:47.170904+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:47.220623+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:47.220753+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:51.221270+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.270937+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.320362+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.380690+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.430988+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.481106+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.530900+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.580354+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.630295+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.680208+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.730276+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.780873+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.830587+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.880518+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.930246+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:51.981013+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.031629+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.080545+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.130147+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.180527+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.230526+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.280407+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.330241+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.380824+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.430354+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.480265+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.530673+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.580601+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.630759+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.680433+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.731336+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.780838+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.830859+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.880480+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.930587+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:52.980524+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.030331+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.081146+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.130691+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.180266+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.230293+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.280406+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.331167+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.380404+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.430372+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.480447+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.530520+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.580224+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.630354+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.680545+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:53.730464+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:53.780396+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:53.780588+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:53.780752+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:53.840468+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:53.840608+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:55.841087+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-10 21:14:55.890582+00:00"}
-{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-10 21:14:55.890766+00:00"}
-{"message": "Retry: /submission", "timestamp": "2025-09-10 21:14:59.891422+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:59.940512+00:00"}
-{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-10 21:14:59.990524+00:00"}
-{"message": "Submissions Complete... Writing output file...", "timestamp": "2025-09-10 21:14:59.991749+00:00"}
-{"message": "Process Complete", "timestamp": "2025-09-10 21:14:59.999092+00:00"}
+{"message": "query_customer_spend request executing.", "timestamp": "2025-09-16 20:53:14.257634+00:00"}
+{"message": "Starting enrichment...", "timestamp": "2025-09-16 20:53:14.262840+00:00"}
+{"message": "Starting new HTTP connection (1): localhost:5000", "timestamp": "2025-09-16 20:53:14.263960+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound21%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:14.273972+00:00"}
+{"message": "Customer '108' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:14.274096+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_sanchez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.277833+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_clark%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.281096+00:00"}
+{"message": "Customer '125', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:14.282770+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michellemartin%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.285513+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=christophersanchez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.289740+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.293021+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_anderson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.295868+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound27%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:14.299289+00:00"}
+{"message": "Customer '182' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:14.299384+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=mark_scott%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.302291+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=betty.king%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:14.304962+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carol_robinson%40gmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:14.308393+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=carol_robinson%40gmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:14.308516+00:00"}
+{"message": "Retry: /enrichment?email=carol_robinson%40gmail.com", "timestamp": "2025-09-16 20:53:14.308631+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carol_robinson%40gmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:14.311096+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=carol_robinson%40gmail.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:14.311340+00:00"}
+{"message": "Retry: /enrichment?email=carol_robinson%40gmail.com", "timestamp": "2025-09-16 20:53:16.311924+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carol_robinson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.314889+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_brown%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.318744+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_robinson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.321251+00:00"}
+{"message": "Customer '229', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:16.322529+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound11%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.324239+00:00"}
+{"message": "Customer '231' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.324360+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=anthony_hill%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.326983+00:00"}
+{"message": "Customer '251', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:16.328279+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound15%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.330165+00:00"}
+{"message": "Customer '274' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.330247+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=ruthwhite%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.333225+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound24%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.336615+00:00"}
+{"message": "Customer '300' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.336761+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.hill%40gmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:16.339878+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=michelle.hill%40gmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.339994+00:00"}
+{"message": "Retry: /enrichment?email=michelle.hill%40gmail.com", "timestamp": "2025-09-16 20:53:16.340232+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.hill%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.343236+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound22%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.346787+00:00"}
+{"message": "Customer '311' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.346901+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_taylor%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.349899+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=richard_lee%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.353194+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound17%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.356121+00:00"}
+{"message": "Customer '346' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.356308+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_hernandez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.359789+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=paulwhite%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.363074+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound14%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.366556+00:00"}
+{"message": "Customer '350' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.366658+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.hill%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:16.369369+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen.hill%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.369461+00:00"}
+{"message": "Retry: /enrichment?email=karen.hill%40outlook.com", "timestamp": "2025-09-16 20:53:16.369563+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.hill%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.371516+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sandrajohnson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.374714+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=stevenjones%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.377977+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=danielwhite%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.380774+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=james_lee%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.383660+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa.perez%40yahoo.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:16.386564+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=lisa.perez%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.386682+00:00"}
+{"message": "Retry: /enrichment?email=lisa.perez%40yahoo.com", "timestamp": "2025-09-16 20:53:16.386795+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa.perez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.389021+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=william_taylor%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.394619+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound8%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:16.397897+00:00"}
+{"message": "Customer '448' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:16.397992+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=paul_anderson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.400258+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=betty.johnson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.404069+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald.wilson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.406841+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_robinson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.409312+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_martinez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.411955+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=nancy_lee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.414495+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_brown%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.417306+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=richardthompson%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:16.420645+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=richardthompson%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.420796+00:00"}
+{"message": "Retry: /enrichment?email=richardthompson%40outlook.com", "timestamp": "2025-09-16 20:53:16.420923+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=richardthompson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.423057+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=bettyking%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.426133+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=james.robinson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:16.429186+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=andrew_martinez%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:16.432089+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=andrew_martinez%40example.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.432196+00:00"}
+{"message": "Retry: /enrichment?email=andrew_martinez%40example.com", "timestamp": "2025-09-16 20:53:16.432302+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=andrew_martinez%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:16.434051+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=andrew_martinez%40example.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:16.434145+00:00"}
+{"message": "Retry: /enrichment?email=andrew_martinez%40example.com", "timestamp": "2025-09-16 20:53:18.434755+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=andrew_martinez%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:18.437456+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=andrew_martinez%40example.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:18.437561+00:00"}
+{"message": "Retry: /enrichment?email=andrew_martinez%40example.com", "timestamp": "2025-09-16 20:53:22.438012+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=andrew_martinez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.440851+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=stevendavis%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.443945+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_flores%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.447090+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carolharris%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.449905+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=william.martin%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.452744+00:00"}
+{"message": "Customer '513', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:22.453971+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=richard.jackson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.455963+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound18%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.458760+00:00"}
+{"message": "Customer '556' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.458856+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.torres%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.461833+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound12%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.465534+00:00"}
+{"message": "Customer '564' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.465676+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald.jackson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.471633+00:00"}
+{"message": "Customer '593', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:22.473724+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa.thompson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.477093+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound5%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.480944+00:00"}
+{"message": "Customer '611' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.481159+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jennifer.hill%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.484422+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_lewis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.488086+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound13%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.491476+00:00"}
+{"message": "Customer '639' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.491610+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=susan.williams%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.494999+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=robertwalker%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.498327+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_robinson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.501192+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound23%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.504315+00:00"}
+{"message": "Customer '659' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.504408+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_ramirez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.507558+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carol_thompson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.510692+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=marklewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.513889+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=davidperez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.517126+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=helen_flores%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.520149+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_miller%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.524642+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michael.robinson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.529161+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=helen.rodriguez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.532624+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=john_perez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.535430+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=danielscott%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.538636+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jennifer.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.542562+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.545543+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=helenmartinez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.548649+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound30%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.551247+00:00"}
+{"message": "Customer '795' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.551336+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=bettyhill%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.554039+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshua.jackson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.557156+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=danieldavis%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.560252+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=charles_lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.564452+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=barbara_martin%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.567936+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=elizabeth_williams%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.572962+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound28%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:22.576561+00:00"}
+{"message": "Customer '865' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:22.576672+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sharon.rodriguez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.579838+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michael_moore%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.583444+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=linda_hernandez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.588814+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=steven.rodriguez%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.592878+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=ruth_sanchez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.596395+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sandra.perez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.600481+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sharon_anderson%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.604571+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=richard.sanchez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.607935+00:00"}
+{"message": "Customer '921', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:22.609335+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donna.martinez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.611841+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=betty_williams%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:22.615116+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_lopez%40hotmail.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:22.618657+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen_lopez%40hotmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:22.618771+00:00"}
+{"message": "Retry: /enrichment?email=karen_lopez%40hotmail.com", "timestamp": "2025-09-16 20:53:22.618887+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_lopez%40hotmail.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:22.620811+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen_lopez%40hotmail.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:22.620908+00:00"}
+{"message": "Retry: /enrichment?email=karen_lopez%40hotmail.com", "timestamp": "2025-09-16 20:53:24.621270+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_lopez%40hotmail.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:24.623745+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen_lopez%40hotmail.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:24.623846+00:00"}
+{"message": "Retry: /enrichment?email=karen_lopez%40hotmail.com", "timestamp": "2025-09-16 20:53:28.624310+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_lopez%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.629261+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=david_wilson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.634715+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=nancy.miller%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.641402+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=john_thompson%40yahoo.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:28.645930+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=john_thompson%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:28.646073+00:00"}
+{"message": "Retry: /enrichment?email=john_thompson%40yahoo.com", "timestamp": "2025-09-16 20:53:28.646262+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=john_thompson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.648634+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound7%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.652872+00:00"}
+{"message": "Customer '996' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.652988+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=linda_lee%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.656804+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donna_lee%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.662931+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound10%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.668546+00:00"}
+{"message": "Customer 'A212' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.668754+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jamessmith%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.674428+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donna_thompson%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.677692+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessicawilson%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.680429+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=matthewwhite%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.683852+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.689056+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=mary_williams%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.692577+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound16%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.695662+00:00"}
+{"message": "Customer 'A528' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.695788+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound26%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.700014+00:00"}
+{"message": "Customer 'A749' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.700133+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=barbarawalker%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.704296+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sandra.williams%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.707568+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sandra_ramirez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.710322+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=johngarcia%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.713609+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=anthonyclark%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.718362+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donna.lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.722030+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=barbarasmith%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.724905+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound25%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.727926+00:00"}
+{"message": "Customer 'B372' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.728019+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=nancy_wright%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.730546+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.moore%40outlook.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:28.733425+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen.moore%40outlook.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:28.733520+00:00"}
+{"message": "Retry: /enrichment?email=karen.moore%40outlook.com", "timestamp": "2025-09-16 20:53:28.733624+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.moore%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.735681+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound20%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.738546+00:00"}
+{"message": "Customer 'B460' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.738629+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound29%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.742264+00:00"}
+{"message": "Customer 'B512' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.742378+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound9%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.745354+00:00"}
+{"message": "Customer 'B528' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.745536+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.anderson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.749080+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=nancyallen%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.751825+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=stevenlee%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.754776+00:00"}
+{"message": "Customer 'B866', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:28.756160+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.lee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.758164+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=christopherthompson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.762814+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound19%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.766002+00:00"}
+{"message": "Customer 'C149' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.766125+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karenlewis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.769412+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=anthony.allen%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.772706+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=christopher_lopez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.775470+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=christopher.davis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.778811+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=daniel.hill%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.781402+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sharon.king%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.783951+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=william.harris%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.786483+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donaldlewis%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.789512+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen_allen%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.794374+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lindasanchez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.799133+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph.thompson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.802992+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_wright%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:28.806616+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound6%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:28.809559+00:00"}
+{"message": "Customer 'C708' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:28.809647+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound2%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:28.812406+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=notfound2%40example.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:28.812505+00:00"}
+{"message": "Retry: /enrichment?email=notfound2%40example.com", "timestamp": "2025-09-16 20:53:28.812609+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound2%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:28.814282+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=notfound2%40example.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:28.814368+00:00"}
+{"message": "Retry: /enrichment?email=notfound2%40example.com", "timestamp": "2025-09-16 20:53:30.814928+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound2%40example.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:30.817996+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=notfound2%40example.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:30.818108+00:00"}
+{"message": "Retry: /enrichment?email=notfound2%40example.com", "timestamp": "2025-09-16 20:53:34.818442+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound2%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:34.821146+00:00"}
+{"message": "Customer 'C807' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:34.821269+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia.robinson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.824282+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joseph_young%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.827430+00:00"}
+{"message": "Customer 'C999', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:34.828732+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.gonzalez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.831077+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=paul.lee%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.834263+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia.jackson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.837260+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=barbaramiller%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.840284+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=david.garcia%40company.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:34.843438+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=david.garcia%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:34.843551+00:00"}
+{"message": "Retry: /enrichment?email=david.garcia%40company.com", "timestamp": "2025-09-16 20:53:34.843658+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=david.garcia%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.845445+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=steven_moore%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.848428+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshua_jackson%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.851611+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=william_lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.854086+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michael_hernandez%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.857132+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=christophermiller%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.861124+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=steven_smith%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.864424+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=matthew.thomas%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.867148+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michelle.garcia%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.869804+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound3%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:34.872481+00:00"}
+{"message": "Customer 'D501' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:34.872569+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=susanwhite%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.875634+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=james.wilson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.878432+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=maryhernandez%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.880984+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=anthony_taylor%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.884011+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=helengonzalez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.886800+00:00"}
+{"message": "Customer 'D908', Unable to call Enrichment API due to missing email.", "timestamp": "2025-09-16 20:53:34.888196+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=joshualewis%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.890985+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=paullee%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.894300+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=james_sanchez%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.897211+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=ruth.brown%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.899801+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=charles_hernandez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.902552+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=robert_robinson%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.905648+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=nancy.hill%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.908794+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=carol_young%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.911790+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=patricia_torres%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.914266+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessica_king%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.917317+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound1%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:34.920072+00:00"}
+{"message": "Customer 'E342' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:34.920182+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michael.lewis%40hotmail.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:34.924639+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=michael.lewis%40hotmail.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:34.924763+00:00"}
+{"message": "Retry: /enrichment?email=michael.lewis%40hotmail.com", "timestamp": "2025-09-16 20:53:34.925169+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michael.lewis%40hotmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.928942+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.scott%40company.com HTTP/1.1\" 503 0", "timestamp": "2025-09-16 20:53:34.932856+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=karen.scott%40company.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:34.932977+00:00"}
+{"message": "Retry: /enrichment?email=karen.scott%40company.com", "timestamp": "2025-09-16 20:53:34.933084+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=karen.scott%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.936095+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=sarahyoung%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.940420+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=thomas.lopez%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.947122+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=paulwilliams%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.953250+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=charlesthomas%40gmail.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.959781+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=lisa_rodriguez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.964708+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=michaelmoore%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.968928+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=notfound4%40example.com HTTP/1.1\" 404 0", "timestamp": "2025-09-16 20:53:34.972433+00:00"}
+{"message": "Customer 'E827' encountered API error. Message: Profile not found", "timestamp": "2025-09-16 20:53:34.972541+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=mark_miller%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.975317+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=steven_jackson%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.978470+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=charles.martinez%40outlook.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.981666+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=jessica.lee%40company.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.986391+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=elizabethdavis%40example.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:34.990164+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald_moore%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:34.993327+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=donald_moore%40yahoo.com'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:34.993446+00:00"}
+{"message": "Retry: /enrichment?email=donald_moore%40yahoo.com", "timestamp": "2025-09-16 20:53:34.993573+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald_moore%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:34.995263+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=donald_moore%40yahoo.com'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:34.995359+00:00"}
+{"message": "Retry: /enrichment?email=donald_moore%40yahoo.com", "timestamp": "2025-09-16 20:53:36.996028+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald_moore%40yahoo.com HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:36.998922+00:00"}
+{"message": "Incremented Retry for (url='/enrichment?email=donald_moore%40yahoo.com'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:36.999034+00:00"}
+{"message": "Retry: /enrichment?email=donald_moore%40yahoo.com", "timestamp": "2025-09-16 20:53:40.999272+00:00"}
+{"message": "http://localhost:5000 \"GET /enrichment?email=donald_moore%40yahoo.com HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.002145+00:00"}
+{"message": "Starting submissions...", "timestamp": "2025-09-16 20:53:41.003076+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.047442+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.097231+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.146918+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.197003+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.246750+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.297384+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.346996+00:00"}
+{"message": "Customer '159' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:41.347113+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.396913+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.447176+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.496938+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.547430+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.596951+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.647581+00:00"}
+{"message": "Customer '207' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:41.647735+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.697301+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.746934+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.796687+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.846749+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.897241+00:00"}
+{"message": "Customer '231' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:41.897394+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.947139+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:41.996988+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.047094+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.096764+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.147459+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.196886+00:00"}
+{"message": "Customer '300' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:42.197003+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.247177+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.296689+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.346936+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.396893+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.446805+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.496803+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.546978+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.597121+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.646871+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.696901+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.746928+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.797515+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.846891+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.896759+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.946976+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:42.996882+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.046870+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.096676+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.146921+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.196775+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.246926+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.296841+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.346775+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.396656+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:43.446736+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:43.497317+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:43.497447+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:43.497556+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:43.547011+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:43.547165+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:45.547657+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:45.597371+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:45.597540+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:49.598111+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.647161+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.696845+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.746911+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.796913+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.846980+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.896637+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.946803+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:49.997346+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.046720+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.096766+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.147063+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.197160+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.246677+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.296629+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.346711+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.396640+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.446649+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.496589+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.546709+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.596705+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.646844+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.696720+00:00"}
+{"message": "Customer '652' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:50.696837+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.746675+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.796895+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.846682+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.896826+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.946825+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:50.996826+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.047025+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.096617+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.147379+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.197690+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.247081+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.297019+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.347381+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.396769+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.446928+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.496730+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.547174+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.597437+00:00"}
+{"message": "Customer '817' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:51.597624+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.646817+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.696809+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.746870+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.796983+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.847634+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.896714+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.946789+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:51.997308+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:52.046573+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:52.096599+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:52.146797+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:52.146923+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:52.147031+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:52.197161+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:52.197292+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:54.197891+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:53:54.247324+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:53:54.247625+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:53:58.248297+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.297494+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.346530+00:00"}
+{"message": "Customer '885' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:58.346646+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.397358+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.446754+00:00"}
+{"message": "Customer '902' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:58.446873+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.496641+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.546525+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.596663+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.646833+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.707442+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.756668+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.806845+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.856728+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.906731+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:58.957435+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.006728+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.056619+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.107117+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.156729+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.207223+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.256601+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.307140+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.357057+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.406678+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.456533+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.506749+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.556750+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.606806+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.656832+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.706670+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.757030+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.806828+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.856681+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.906963+00:00"}
+{"message": "Customer 'B372' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:53:59.907096+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:53:59.956818+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.006837+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.056646+00:00"}
+{"message": "Customer 'B429' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:00.056763+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.106715+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.157555+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.206691+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.256507+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.307312+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.356582+00:00"}
+{"message": "Customer 'B565' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:00.356706+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.407004+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.456621+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.506536+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.556860+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.606820+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.656474+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.706591+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:00.756707+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:00.807113+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:00.807237+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:00.807341+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:00.866728+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:00.866851+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:02.867556+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:02.916575+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:02.916705+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:06.917374+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:06.966581+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.016509+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.066630+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.116457+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.176572+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.226455+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.277077+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.326629+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.376513+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.426566+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.476878+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.536611+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.586668+00:00"}
+{"message": "Customer 'C854' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:07.586790+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.636913+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.686718+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.736730+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.786624+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.837323+00:00"}
+{"message": "Customer 'D179' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:07.837449+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.887031+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.937096+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:07.986603+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.036494+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.086654+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.136683+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.186617+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.237174+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.286619+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.336403+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.386486+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.436573+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.487080+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.536445+00:00"}
+{"message": "Customer 'D535' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:08.536559+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.586662+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.637141+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.686579+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.736505+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.786862+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.836656+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.887135+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.936619+00:00"}
+{"message": "Customer 'E104' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:08.936740+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:08.986499+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.036831+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.086677+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.136721+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.186526+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.236534+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.286700+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.336755+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.386753+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:09.436632+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:09.486628+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=4, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:09.486760+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:09.486868+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:09.536669+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=3, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:09.536798+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:11.537455+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 429 0", "timestamp": "2025-09-16 20:54:11.586590+00:00"}
+{"message": "Incremented Retry for (url='/submission'): Retry(total=2, connect=None, read=None, redirect=None, status=None)", "timestamp": "2025-09-16 20:54:11.586720+00:00"}
+{"message": "Retry: /submission", "timestamp": "2025-09-16 20:54:15.587240+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.636886+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.686921+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.736716+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.786869+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.836902+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.887375+00:00"}
+{"message": "Customer 'E627' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:15.887520+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.936869+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:15.986602+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.037069+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.087371+00:00"}
+{"message": "Customer 'E827' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:16.087497+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.137060+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.186747+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.236884+00:00"}
+{"message": "Customer 'E856' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:16.237008+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.287246+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.336624+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.386690+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.436693+00:00"}
+{"message": "Customer 'E925' Submission failed. Incremented retry count: '1'", "timestamp": "2025-09-16 20:54:16.436824+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.486965+00:00"}
+{"message": "http://localhost:5000 \"POST /submission HTTP/1.1\" 200 0", "timestamp": "2025-09-16 20:54:16.537679+00:00"}
+{"message": "Submissions Complete... Writing output file...", "timestamp": "2025-09-16 20:54:16.538911+00:00"}
+{"message": "Process Complete", "timestamp": "2025-09-16 20:54:16.542930+00:00"}

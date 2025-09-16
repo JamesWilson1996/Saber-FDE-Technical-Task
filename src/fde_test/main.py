@@ -36,7 +36,16 @@ def main():
     #Submit Enriched Data
     logger.info("Starting submissions...")
     for customer in customer_df.itertuples():
-        r = api_client.post_submission(customer)
+        for i in range(config_data["api_retries"]+1):
+            r = api_client.post_submission(customer)
+            if r["success"] == "failure" and i < config_data["api_retries"]:
+                logger.warning(f"Customer '{customer.customer_id}' Submission failed. Incremented retry count: '{i+1}'")
+                continue
+            else:
+                if r["success"] == "failure":
+                    logger.error(f"Customer '{customer.customer_id}' Submission failed. Retry count exceeded.")
+                break
+        r["success"] = True if r["success"] == "success" else False
         customer_df.loc[customer.Index, ["success", "reason"]] = [r["success"], r["reason"]]
 
     logger.info("Submissions Complete... Writing output file...")
